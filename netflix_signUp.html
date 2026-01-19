@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="NETFLIX_css_sign.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span><img src="logo.png" alt=""></span>
+        </nav>
+
+        <div class="container">
+            <h2>Sign In</h2>
+            <input type="email" name="email" id="mail" placeholder="Email or mobile number" class="input">
+            
+            <input type="password" name="password" id="pass" placeholder="Password" class="input">
+
+            <button type="submit" class="btn btn-red-bt" id="check">Sign In</button>
+            <p>OR</p>
+            <button type="submit" class="btn btn-us">Use a Sign-in code</button>
+
+            <a href="">Forget password?</a>
+
+            <table cellspacing="1px">
+                <tr class="rem">
+                    <td><input type="checkbox" id="Remember"></td>
+                    <td>Remember me</td>
+                </tr>
+            </table>
+
+            <div class="text">
+                <pre>New to Netflix? <a href="NETFLIX.html">Sign up now.</a></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="box"></div>
+
+    <footer class="footer">
+        <p class="footer-top">Questions? Call <a href="#">000-800-919-1694</a></p>
+
+        <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+        </div>
+
+        <p class="footer-country">Netflix India</p>
+    </footer>
+
+</body>
+<script>
+    const msg = document.getElementById("mail");
+    const btn=document.getElementById("check");
+btn.addEventListener("click", info);
+
+function info() {
+    let mail = msg.value;
+    const wrong=document.getElementById("wrong_email");
+    if (mail.endsWith("@gmail.com")) {
+        msg.style.border="2px solid green";
+        wrong.innerText="Incorrect Email";
+        wrong.style.color="red";
+    } 
+    else if (mail === "") {
+    msg.style.border = "2px solid orange";
+    }
+    else {
+        msg.style.border="2px solid red";
+        
+    }
+}
+
+</script>
+
+</html>

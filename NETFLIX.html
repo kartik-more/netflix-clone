@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="NETFLIX_CSS.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span><img src="logo.png" alt="" width="70"></span>
+            <div>
+                <select class="btn" id="btn1">
+                    <option value="english" class="op1" selected>English</option>
+                    <option value="hindi" class="op1">हिंदी</option>
+                </select>
+                <a href="netflix_signUp.html"><button class="btn btn-red-sm"
+                        onclick=>Sign in</button></a>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="text">
+            <span id="txt">Enjoy Big movies hit series and more from Rs.149.</span><br>
+            <span id="txt2">Ready to watch? Enter your email to create or restart your membership</span><br>
+            <div class="create">
+                <input type="email" placeholder="Email Address">
+                <button class="btn btn-red">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+
+    <section class="first">
+        <div class="first-text">
+            <h1>Enjoy on your TV</h1>
+            <p>
+                Watch on smart TVs, PlayStation, Xbox, Chromecast,
+                Apple TV, Blue-ray players and more.
+            </p>
+        </div>
+
+        <div class="secvideo">
+            <video src="vedio.mp4" autoplay loop muted playsinline></video>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section class="second">
+        <div class="secimg">
+            <img src="str.jpg" alt="Stranger Things" id="poster">
+        </div>
+
+        <div class="second-text">
+
+            <h1>Download your favourite series</h1>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </section>
+    <div class="line"></div>
+    <h1 id="head_Q">More reason to Join</h1>
+    <section class="third">
+        <div class="reasons">
+            <h1>Enjoy on your TV</h1><br>
+            <h5>watch on smart TVs, PlayStation,
+                Xbox, Chromecast,ApppleTV,Blu-ray
+                players and more</h5>
+        </div>
+        <div class="reasons">
+            <h1>Download your Shows to watch Offline</h1>
+            <h5>Save your favourites easily and always have something to watch</h5>
+        </div>
+        <div class="reasons">
+            <h1>Watch everywhere</h1>
+            <h5>Stream unlimited movies and TV Showson your phone, tablet,laptop and TV</h5>
+        </div>
+        <div class="reasons">
+            <h1>Create profiles for kids</h1>
+            <h5>Send kids on adventure with their favourite characters in a space made just for them-free with your
+                memebership</h5>
+        </div>
+    </section>
+    <section class="forth" id="faq">
+        <h1>Frequetly Asked Questions</h1>
+        <div class="question">
+        <details>
+            <summary>What is Netflix?</summary>
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+        </details>
+
+        <details>
+            <summary>How much does Netflix cost?</summary>
+            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                monthly fee. Plans range from ₹149 to ₹649/month</p>
+        </details>
+
+        <details>
+            <summary>Where can I watch?</summary>
+            <p>anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from
+                your personal computer or on any internet-connected device that offers the Netflix app, including smart
+                TVs, smartphones, tablets, streaming media players and game consoles.
+
+                You can also download your favourite shows with the iOS or Android app. Use downloads to watch while
+                you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+        </details>
+
+        <details>
+            <summary>How do I cancel?</summary>
+            <p>Netflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation
+                fees – start or stop your account anytime.</p>
+        </details>
+
+        <details>
+            <summary>What can i watch on Netflix?</summary>
+            <p>Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning Netflix
+                originals, and more. Watch as much as you want, anytime you want.</p>
+        </details>
+
+        <details>
+            <summary>Is Netflix good for kids?</summary>
+            <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                family-friendly TV shows and films in their own space.
+
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                content kids can watch and block specific titles you don’t want kids to see.</p>
+        </details>
+        </div>
+    </section><br>
+    <div class="line"></div><br>
+   <footer class="footer">
+        <p class="footer-top">Questions? Call <a href="#">000-800-919-1694</a></p>
+
+        <div class="footer-links">
+            <a href="#faq">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Corporate Information</a>
+        </div>
+
+        <p class="footer-country">Netflix India</p>
+    </footer>
+</body>
+<script>
+    document.getElementById("btn1").addEventListener("change", function () {
+
+    
+    if (this.value === "hindi") {
+
+        //  section
+        document.getElementById("txt").innerText =
+            "बड़े-बड़े फ़िल्में, हिट सीरीज़ और बहुत कुछ सिर्फ ₹149 से।";
+
+        document.getElementById("txt2").innerText =
+            "देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या फिर शुरू करने के लिए अपना ईमेल दर्ज करें।";
+
+        // First Section
+        document.querySelector(".first-text h1").innerText =
+            "अपने टीवी पर आनंद लें";
+
+        document.querySelector(".first-text p").innerText =
+            "स्मार्ट टीवी, प्लेस्टेशन, एक्सबॉक्स, क्रोमकास्ट, एप्पल टीवी, ब्लू-रे प्लेयर्स और अन्य पर देखें।";
+
+        // Second Section
+        document.querySelector(".second-text h1").innerText =
+            "अपनी पसंदीदा सीरीज़ डाउनलोड करें";
+
+        document.querySelector(".second-text p").innerText =
+            "अपनी पसंदीदा चीज़ें आसानी से सेव करें और हमेशा देखने के लिए कुछ न कुछ पाएँ।";
+
+        // More reasons to join heading
+        document.querySelector("body > h1").innerText =
+            "जुड़ने के और भी कारण";
+
+        // Third Section (4 cards)
+        let reasons = document.querySelectorAll(".reasons");
+
+        reasons[0].querySelector("h1").innerText = "अपने टीवी पर आनंद लें";
+        reasons[0].querySelector("h5").innerText =
+            "स्मार्ट टीवी, प्लेस्टेशन, एक्सबॉक्स, क्रोमकास्ट, एप्पल टीवी, ब्लू-रे प्लेयर्स और अन्य पर देखें";
+
+        reasons[1].querySelector("h1").innerText =
+            "ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें";
+        reasons[1].querySelector("h5").innerText =
+            "अपनी पसंदीदा चीज़ें आसानी से सेव करें और हमेशा देखने के लिए कुछ न कुछ पाएँ";
+
+        reasons[2].querySelector("h1").innerText = "हर जगह देखें";
+        reasons[2].querySelector("h5").innerText =
+            "अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें";
+
+        reasons[3].querySelector("h1").innerText =
+            "बच्चों के लिए प्रोफ़ाइल बनाएं";
+        reasons[3].querySelector("h5").innerText =
+            "अपने बच्चों को उनकी पसंदीदा सामग्री के साथ सुरक्षित अनुभव प्रदान करें";
+
+        // FAQ title
+        document.querySelector(".forth h1").innerText =
+            "अक्सर पूछे जाने वाले प्रश्न";
+
+        // FAQ questions and answer
+        let faq = document.querySelectorAll(".question details");
+
+        faq[0].querySelector("summary").innerText = "Netflix क्या है?";
+        faq[0].querySelector("p").innerText =
+            "Netflix एक स्ट्रीमिंग सेवा है, जहाँ आप टीवी शो, फ़िल्में, एनीमे, डॉक्यूमेंट्री और बहुत कुछ देख सकते हैं। आप जितना चाहें, जब चाहें देख सकते हैं, वह भी बिना विज्ञापन के।";
+
+        faq[1].querySelector("summary").innerText =
+            "Netflix की क्या कीमत है?";
+        faq[1].querySelector("p").innerText =
+            "Netflix प्लान ₹149 से ₹649 प्रति माह तक उपलब्ध हैं। इनमें से कोई भी प्लान चुनकर आप फ़ोन, टैबलेट, टीवी या लैपटॉप पर देख सकते हैं।";
+
+        faq[2].querySelector("summary").innerText = "मैं कहाँ देख सकता हूँ?";
+        faq[2].querySelector("p").innerText =
+            "कहीं भी, कभी भी। Netflix ऐप या वेबसाइट के माध्यम से तुरंत देखना शुरू करें। आप ऑफ़लाइन देखने के लिए डाउनलोड भी कर सकते हैं।";
+
+        faq[3].querySelector("summary").innerText =
+            "मैं अपना खाता कैसे रद्द करूँ?";
+        faq[3].querySelector("p").innerText =
+            "आप दो क्लिक में अपना खाता रद्द कर सकते हैं। कोई अतिरिक्त शुल्क नहीं है।";
+
+        faq[4].querySelector("summary").innerText =
+            "मैं Netflix पर क्या देख सकता हूँ?";
+        faq[4].querySelector("p").innerText =
+            "Netflix पर फ़िल्में, डॉक्यूमेंट्री, टीवी शो, एनीमे और Netflix ओरिजिनल की बड़ी लाइब्रेरी उपलब्ध है।";
+
+        faq[5].querySelector("summary").innerText =
+            "क्या Netflix बच्चों के लिए अच्छा है?";
+        faq[5].querySelector("p").innerText =
+            "हाँ, Netflix बच्चों के लिए सुरक्षित प्रोफ़ाइल प्रदान करता है, जिसमें केवल बच्चों के लिए उपयुक्त सामग्री होती है।";
+
+        // Footer
+        document.querySelector(".footer-top").innerHTML =
+            "प्रश्न? कॉल करें <a href='#'>000-800-919-1694</a>";
+
+        let links = document.querySelectorAll(".footer-links a");
+        links[0].innerText = "अक्सर पूछे जाने वाले प्रश्न";
+        links[1].innerText = "सहायता केंद्र";
+        links[2].innerText = "उपयोग की शर्तें";
+        links[3].innerText = "गोपनीयता";
+        links[4].innerText = "कुकी सेटिंग्स";
+        links[5].innerText = "कंपनी की जानकारी";
+
+        document.querySelector(".footer-country").innerText =
+            "Netflix भारत";
+
+        // Buttons
+        document.querySelector(".btn.btn-red").innerText =
+            "शुरू करें";
+
+        document.querySelector(".btn-red-sm").innerText =
+            "साइन इन करें";
+
+    } else {
+        //start from english language
+
+        document.getElementById("txt").innerText =
+            "Enjoy Big movies hit series and more from Rs.149.";
+
+        document.getElementById("txt2").innerText =
+            "Ready to watch? Enter your email to create or restart your membership.";
+
+        document.querySelector(".first-text h1").innerText =
+            "Enjoy on your TV";
+        document.querySelector(".first-text p").innerText =
+            "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blue-ray players and more.";
+
+        document.querySelector(".second-text h1").innerText =
+            "Download your favourite series";
+        document.querySelector(".second-text p").innerText =
+            "Save your favourites easily and always have something to watch.";
+
+        document.querySelector("body > h1").innerText =
+            "More reason to Join";
+
+        let reasons = document.querySelectorAll(".reasons");
+
+        reasons[0].querySelector("h1").innerText = "Enjoy on your TV";
+        reasons[0].querySelector("h5").innerText =
+            "watch on smart TVs, PlayStation, Xbox, Chromecast,ApppleTV,Blu-ray players and more";
+
+        reasons[1].querySelector("h1").innerText =
+            "Download your Shows to watch Offline";
+        reasons[1].querySelector("h5").innerText =
+            "Save your favourites easily and always have something to watch";
+
+        reasons[2].querySelector("h1").innerText = "Watch everywhere";
+        reasons[2].querySelector("h5").innerText =
+            "Stream unlimited movies and TV Shows on your phone, tablet, laptop and TV";
+
+        reasons[3].querySelector("h1").innerText =
+            "Create profiles for kids";
+        reasons[3].querySelector("h5").innerText =
+            "Send kids on adventure with their favourite characters in a space made just for them";
+
+        document.querySelector(".forth h1").innerText =
+            "Frequetly Asked Questions";
+
+        let faq = document.querySelectorAll(".question details");
+
+        faq[0].querySelector("summary").innerText = "What is Netflix?";
+        faq[0].querySelector("p").innerText =
+            "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more.";
+
+        faq[1].querySelector("summary").innerText = "How much does Netflix cost?";
+        faq[1].querySelector("p").innerText =
+            "Plans range from ₹149 to ₹649/month.";
+
+        faq[2].querySelector("summary").innerText = "Where can I watch?";
+        faq[2].querySelector("p").innerText =
+            "Watch anywhere, anytime with the Netflix app.";
+
+        faq[3].querySelector("summary").innerText = "How do I cancel?";
+        faq[3].querySelector("p").innerText =
+            "Cancel anytime with no extra fees.";
+
+        faq[4].querySelector("summary").innerText =
+            "What can I watch on Netflix?";
+        faq[4].querySelector("p").innerText =
+            "You can watch movies, shows, anime, documentaries and more.";
+
+        faq[5].querySelector("summary").innerText =
+            "Is Netflix good for kids?";
+        faq[5].querySelector("p").innerText =
+            "Kids have a safe viewing experience with Netflix Kids.";
+
+        document.querySelector(".footer-top").innerHTML =
+            "Questions? Call <a href='#'>000-800-919-1694</a>";
+
+        let links = document.querySelectorAll(".footer-links a");
+        links[0].innerText = "FAQ";
+        links[1].innerText = "Help Center";
+        links[2].innerText = "Terms of Use";
+        links[3].innerText = "Privacy";
+        links[4].innerText = "Cookie Preferences";
+        links[5].innerText = "Corporate Information";
+
+        document.querySelector(".footer-country").innerText =
+            "Netflix India";
+
+        document.querySelector(".btn.btn-red").innerText =
+            "Get Started";
+
+        document.querySelector(".btn-red-sm").innerText =
+            "Sign in";
+    }
+
+});
+
+</script>
+</html>
