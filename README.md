@@ -18,5 +18,3 @@ A Netflix landing page clone built using HTML, CSS and JavaScript.
 1. Download or clone the repository.
 2. Open `NETFLIX.html` in your browser.
 
-## Note
-This project is for educational purposes only.
